@@ -1,8 +1,5 @@
       function formComponent() {
-        const bot = {
-          TOKEN: 'BOT_TOKEN_HERE', // add bot token
-          chatID: 'CHAT_ID_HERE', // add chat id
-        };
+        const bot = window.bot;
 
         const reqTo = [[bot.TOKEN, bot.chatID]];
         return {
